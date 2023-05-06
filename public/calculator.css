@@ -1,0 +1,94 @@
+/* Set background image */
+body {
+    background-image: url('claorie.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: fixed;
+  }
+  
+  /* Style the container */
+  .container {
+    margin-top: 300px;
+    padding-left: 1%;
+    background-color: rgba(202, 202, 188, 0.589);
+    border-radius: 10px;
+    /* padding: 0px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+  }
+  
+  /* Style the heading */
+  h1 {
+    font-size: 33px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(58, 21, 21);
+    transition: all 0.2s ease-in-out;
+  }
+  h1:hover{
+    transform: translateY(-3px);
+  }
+  
+  /* Style the lead paragraph */
+  .lead {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  /* Style the form */
+  form {
+    margin-top: 30px;
+  }
+  
+  /* Style the exercise label */
+  label[for="exercise"] {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Style the duration label */
+  label[for="duration"] {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Style the calculate button */
+  .button1 {
+    background-color: #d4d3a8af;
+    color: rgb(110, 65, 65);
+    /* border-color: #367fa9; */
+    border: none;
+    font-size: 1.2em;
+    transition: all 0.2s ease-in;
+    padding: 10px;
+    border-radius:8px;
+  }
+
+  .button1:hover{
+    transform: translateY(-3px);
+    background-color: #ded8a6cc;
+    color: rgb(110, 65, 65);
+
+  }
+  .button1:active{
+    background-color: #ded8a6cc;
+    border: none;
+  }
+  .button1:focus{
+    /* background-position: #ded8a6cc; */
+    border: none;
+  }
+
+  /* Style the result paragraph */
+  #result {
+    margin-top: 30px;
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+  }
+  
+  .resultB{
+    background-color: rgba(212, 180, 174, 0.507);
+    width:70%;
+   margin-left: 10%;
+   border-radius: 10px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }

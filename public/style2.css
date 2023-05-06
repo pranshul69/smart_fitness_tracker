@@ -1,0 +1,56 @@
+body {
+    background-image: url(https://c0.wallpaperflare.com/preview/719/689/312/fitness-sports-gym-exercise.jpg);
+    background-size: cover;
+}
+.bmi {font-family: 'Buenard';
+    font-size: 84px;
+    line-height: 106.2%;
+    /* or 94px */
+    margin-top: 70px;
+    margin-left: 270px;
+    font-weight: 200px;
+    display: flex;
+    align-items: center;
+    color: black; 
+    mix-blend-mode: darken;
+   
+}
+.form-group {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+margin-top: 200px;
+margin-left: 170px;
+position: absolute;
+width: 956px;
+height: 282px;
+left: 20px;
+top: 20px;
+color: #E9A800;
+font-size: 20px;
+}
+
+
+.btn1 {
+    position: absolute;
+width: 300px;
+height: 64px;
+left: 222px;
+top: 490px;
+padding-bottom: 70px;
+margin-bottom: 100px;
+margin-top: 60px;
+font-size: 30px;
+padding-top: 20px;
+background: #E9A800;
+border-radius: 41px;
+}
+.r {
+margin-top: 480px;
+margin-left: 40px;
+color: black;
+font-size: 20px;
+font-weight: bold;
+}

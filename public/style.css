@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+	--primary-color: #215972;
+	--secondary-color: grey;
+	--tertiary-color:#061528;
+	--font: 'Poppins', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: bolder;
+	background: white;
+	color: black;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid white;
+	transition: .3s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: white;
+	transform: translateY(-5px);
+	transition: 0.5s;
+}
+.btn2{
+	padding: .24rem .18rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: bolder;
+	background: white;
+	color: black;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid white;
+	transition: .3s;
+	cursor: pointer;
+}
+.btn2:hover{
+	background: white;
+	transform: translateY(-5px);
+	transition: 0.5s;
+}
+body{
+	background: black;
+	font-family: var(--font);
+}
+
+nav{
+	position:fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+	margin-top: -40px;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: white;
+}
+
+.logo::before{
+	content: "Fitness";
+	color: black;
+}
+.logo::after{
+	content: "Tracker";
+	color: black;
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	transform: translateY(-5px);
+	transition: 0.5s ;
+}
+
+.banner{
+	background: url(img/banner2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 85vh;
+	margin-top: -50px;
+}
+
+.intro{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: white;
+}
+
+.intro h2,p{
+	display: block;
+	width: 60%;
+}
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+.intro .btn{
+	margin-top: 2rem;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+.card{
+	width: 33.3%;
+	height: 600px;
+	padding: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.card p{
+	margin-bottom: -60px;
+}
+.card h2{
+	text-transform: uppercase;
+	margin-left: -20px;
+	margin-top: 50px;
+	
+}
+.card a{
+	text-decoration: none;
+}
+
+:root{
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+ }
+ 
+ *{
+	margin: 0;
+	box-sizing: border-box;
+ }
+ 
+ /* carousel */
+ .carousel_inner{
+	width: 100%;
+	overflow: hidden;
+ }
+ 
+ .carousel_inner::after{
+	content: "";
+	display: block;
+	clear: both;
+ }
+ 
+ .carousel_item{
+	position: relative;
+	float: left;
+	display: none;
+	width: 100%;
+	margin-right: -100%;
+ }
+ 
+ /* slide effect */
+ .carousel_item__active,
+ .carousel_item__pos_next{
+	display: block;
+ }
+ 
+ .carousel_item__pos_next{
+	left: 100%;
+ }
+ 
+ .carousel_item__next{
+	transform: translateX(-100%);
+	transition: transform .5s ease-in-out;
+ }
+ 
+ /* fade effect */
+ .carousel__fade .carousel_item__pos_next{
+	left: 0;
+	opacity: 0;
+ }
+ 
+ .carousel__fade .carousel_item__next{
+	transform: none;
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+ }
+ 
+ .carousel__fade .carousel_item__active.carousel_item__next{
+	opacity: 0;
+ }
+ 
+ /* carousel */
+ .carousel_img{
+	display: block;
+	width: 100%;
+	height: 800px;
+ }
+ 
+ .carousel_caption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 3rem 2.5rem;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+ }
+ 
+ .carousel_title{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+ }
+ 
+ .carousel_description{
+	margin-top: .75rem;
+	line-height: 150%;
+ }
+ .change_content:after {
+    content: "";
+    animation: changetext 14s infinite linear;
+    color:  #fb752d;
+  }
+  .change_content{
+	font-size: 70px;
+  }
+  @keyframes changetext {
+    0% {
+      content: "STRONG";
+    }
+    20% {
+      content: "PHYSICALLY FIT";
+    }
+    35% {
+      content: "MOTIVATED";
+    }
+    60% {
+      content: "HEALTHY";
+    }
+    80% {
+      content: "HAPPY";
+    }
+    100% {
+      content: "ACTIVE";
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  
+  section.c{
+	background-image: url(https://c0.wallpaperflare.com/preview/773/46/359/woman-female-bar-strong.jpg);
+	background-size:cover;
+  }
+/*section h3{
+	text-align: left;
+	margin-left: -1200px;
+}*/
+  section{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  section:nth-child(1){
+	color:#fff;
+  }
+section:nth-child(2){
+	color: #1D212B;
+	background: #fff;
+}
+section:nth-child(3){
+	color:#fff;
+  }	
+  section:nth-child(4){
+	color:  #fb752d;
+	background: #fff;
+}
+section .container{
+	margin: 100px;
+}
+section h1{
+	font-size: 60px;
+margin-bottom: -100px;
+	margin-left: 05px;
+	margin-top: 10px;
+}
+section h3{
+	text-align: left;
+	margin-left: -920px;
+	margin-top: -150px;
+	font-size: 25px;
+}
+section h2{
+	font-size: 70px;
+margin-top: 100px;
+	text-transform: uppercase;
+	color: black;
+}
+
+section .c11{
+	display:flex;
+}
+/*section .cards .text-card{
+	background: #fff;
+	margin: 20px;
+	padding: 20px;
+}
+section .cards .text-card h3{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}*/
+@media (max-width: 900px){
+	section h1{
+		font-size: 40px;
+	}
+	section .thecard{
+		flex-direction: column;
+	}
+	
+}
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: all 2s ease;
+}
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+}
+section.c1{
+background-color: #fff;
+background-size: cover;
+height: 600px;
+}
+.maincontainer{
+
+	width: 300px;
+	height: 390px;
+	background: none;
+margin-left: -270px;
+margin-top: 250px;
+margin-bottom: -150px;
+	transform: translate(-50%, -50%);
+
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+	transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+	position: absolute;
+	font-style: italic;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-image: url(https://c0.wallpaperflare.com/preview/740/290/352/active-activity-adult-road.jpg);
+	background-size: 540px;
+	background-position: center;
+	backface-visibility: hidden;
+	overflow: hidden;
+
+	color: #000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	
+	background-position: center;
+	
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront h1, .theback h1{
+	font-family: 'zilla slab', sans-serif;
+	padding: 30px;
+	color: #0d0b0b;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+  }
+  
+  .thefront p, .theback p {
+    font-family: 'zilla slab', sans-serif;
+    position: absolute;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #0f0d0d;
+    width: 280px;
+	padding-top: 100px;
+    word-wrap: break-word;
+}
+
+  .maincontainer1{
+	display: flex;
+	margin-left: 200px;
+	margin-top: 250px;
+	width: 300px;
+	height: 390px;
+	background: none;
+	margin-bottom: -150px;
+	transform: translate(-50%, -50%);
+
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard1{
+	position: relative;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard1:hover{
+	transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront1{
+	position: absolute;
+	font-style: italic;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/938/467/793/men-fitness-pushups-wallpaper-preview.jpg);
+	background-position: center;
+	backface-visibility: hidden;
+	overflow: hidden;
+
+	color: #000000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	
+	background-position: center;
+	background-size: 500px;
+	color: #000000;
+	text-align: center;
+	transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront1 h1, .theback1 h1{
+	font-family: 'zilla slab', sans-serif;
+	padding: 30px;
+	color: #000000;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+  }
+  
+  .thefront1 p, .theback1 p{
+    font-family: 'zilla slab', sans-serif;
+    position: absolute;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #0b0b0b;
+    width: 280px;
+	padding-top: 100px;
+    word-wrap: break-word;
+  }
+  .maincontainer2{
+	display: flex;
+	margin-left: 200px;
+	margin-top: 250px;
+	margin-right: -650px;
+	margin-bottom: -150px;
+	width: 300px;
+	height: 390px;
+	background: none;
+
+	transform: translate(-50%, -50%);
+
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard2{
+	position: relative;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard2:hover{
+	transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront2{
+	position: absolute;
+	font-style: italic;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/466/967/812/fitness-gym-squats-wallpaper-preview.jpg);
+	background-position: center;
+	backface-visibility: hidden;
+	overflow: hidden;
+
+	color: #000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	
+
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront2 h1, .theback2 h1{
+	font-family: 'zilla slab', sans-serif;
+	color: #0e0c0c;
+	padding: 30px;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+	
+  }
+  
+  .thefront2 p, .theback2 p{
+	font-family: 'zilla slab', sans-serif;
+    position: absolute;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #0a0909;
+    width: 280px;
+	padding-top: 100px;
+    word-wrap: break-word;
+  }
+  #reveal-effect {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	/* transition: all 5s; */
+  }
+  
+  .a2{
+	top: 70%;
+  }
+  
+section {
+	height: 1200px;
+}
+
+.container1 {
+	height: 600px;
+margin-top: 150px;
+margin-left: 500px;
+margin-right: -500px;
+	display: grid;
+	row-gap: 20px;
+	column-gap: 5px;
+	/* grid-template-columns: 200px 200px 200px; */
+	/* grid-template-rows: 200px 80px; */
+	/* grid-auto-rows: 150px; */
+	/* justify-content: center; */
+	/* align-content: center; */
+	/* align-items: start; */
+	grid-template-areas: "hdr hdr hdr hdr"
+		"sbr main main main"
+		"sbr main main main"
+		"ftr ftr ftr ftr";
+}
+
+.box {
+	border: 2px solid black;
+	padding: 12px;
+}
+
+#box-1 {
+	grid-area: hdr;
+	width: 600px;
+	height: 400px;
+	margin-top: 60px;
+	margin-left: -100px;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/520/458/383/bodybuilder-hrithik-roshan-fitness-5k-wallpaper-preview.jpg);
+}
+
+#box-2 {
+	grid-area: sbr;
+	width: 470px;
+	margin-left: -100px;
+	margin-right: -150px;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/914/90/566/power-workout-fitness-perspiration-wallpaper-preview.jpg);
+	height: 200px;
+}
+
+#box-3 {
+	grid-area: main;
+	width: 340px;
+	margin-left: 300px;
+	margin-top: -420px;
+	height: 400px;
+	background-image: url(https://c0.wallpaperflare.com/preview/147/268/25/abs-active-athlete-barbell.jpg);
+}
+
+#box-4 {
+	grid-area: ftr;
+	width: 470px;
+	margin-left: 395px;
+	margin-top: -220px;
+
+	height: 200px;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/203/310/553/usain-bolt-running-motivational-quote-wallpaper-preview.jpg);
+
+}
+
+
+
+#box-5 {
+	background-color: bisque;
+	/* justify-self: center;
+align-self: center; */
+	/* grid-column-start: 1;
+grid-column-end: 4; */
+	/* grid-column: 1 / -1;
+grid-row: 1 / 3;
+grid-area: 2 / 2/ 3/ 4; */
+}
+.container1{
+	animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+section.creator p{
+	font-size: 50px;
+	margin-top: -600px;
+	color: #000;
+	margin-left: 600px;
+}
+section.creator{
+	background-color: #fff;
+	height: 500px;
+}
+.slide-container {
+	width: 100%;
+height: 450px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background-color: #fff;
+	margin-left: -1500px;
+	margin-top: -20px;
+}
+
+.image-slider{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+.slides-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 30px;
+}
+
+.img{
+	position: relative;
+	width: 240px;
+	height: 370px;
+	transition: 0.5s;
+}
+
+.button {
+	position: absolute;
+	width: 240px;
+	height: 370px;
+	transition: 0.5s;
+	background-color: rgba(67, 67, 151, 0.2);
+}
+
+section.h{
+	font-size: 40px;
+	margin-left: 620px;
+	margin-top: 60px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 20px 60px 200px;
+  
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 25px 0 22px 20px;
+	
+}
+.footer-distributed .footer-links:hover {
+    color: #ffffff;
+    margin: 25px 0 22px 20px;
+	transform: translateY(-5px);
+	transition: 1s;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+   color: white;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 15px ;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+	font-size: 17px;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 65px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-map-marker {
+    font-size: 23px;
+    line-height: 38px;
+	margin-top: 4px;
+
+}
+.footer-distributed .footer-center i.fa-phone {
+    font-size: 17px;
+    line-height: 38px;
+	margin-right: 40px;
+}
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+	margin-right: 40px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-left: -10px;
+	margin-top: 12px;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 1.8;
+	margin-left: -30px;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+	margin-right: -0px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+	color: #fff;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 55px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #33383b;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.creator {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.containerz {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 120px ;
+}
+
+.containerz .boxs {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  margin: 1.9rem;
+}
+
+.containerz .boxs:hover .imgBox {
+  transform: translate(-3.5rem, -3.5rem);
+}
+
+.containerz .boxs:hover .content {
+  transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+  width: 15rem;
+  height: 20rem;
+  object-fit: cover;
+  resize: both;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.content h2 {
+  display: block;
+  font-size: 1rem;
+  color: #111;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.content span {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .container .boxs:hover .content {
+    transform: translate(0, 3.5rem);
+  }
+  .container .boxs:hover .imgBox {
+    transform: translate(0, -3.5rem);
+  }
+}   
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.z1 {
+	--color: #fff;
+	--bgColor: rgba(245, 245, 245);
+	min-height: 100vh;
+	display: grid;
+	align-content: center;
+	gap: 2rem;
+	padding: 2rem;
+	font-family: "Exo 2", sans-serif;
+	color: var(--color);
+	background: var(--bgColor);
+  }
+ol {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  list-style: none;
+  counter-reset: stepnr;
+}
+
+li:nth-child(6n + 1) { --accent-color: #b8df4e }
+li:nth-child(6n + 2) { --accent-color: #4cbccb }
+li:nth-child(6n + 3) { --accent-color: #7197d3 }
+li:nth-child(6n + 4) { --accent-color: #ae78cb }
+li:nth-child(6n + 5) { --accent-color: #7dc7a4 }
+li:nth-child(6n + 6) { --accent-color: #f078c2 }
+
+ol li {
+  counter-increment: stepnr;
+  width: 18rem;
+  --borderS: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 2rem);
+  position: relative;
+}
+ol li::before,
+ol li::after {
+  inset: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--borderS) solid var(--bgColor);
+  line-height: 1.1;
+}
+ol li::before {
+  content: counter(stepnr);
+  color: var(--accent-color);
+  padding-left: 10rem;
+  font-size: 12rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+ol li::after {
+  content: "";
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+}
+
+ol li > * { width: 7.5rem }
+ol li .icon { font-size: 2rem; color: var(--accent-color); text-align: center }
+ol li .title { font-size: 2rem; font-weight: 500 }
+ol li .descr { font-size: 0.8rem; font-weight: 300 }
+
+.credits { margin-top: 2rem; text-align: right }
+.credits a { color: var(--color) }

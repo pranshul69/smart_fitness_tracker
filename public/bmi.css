@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/portrait-young-sportive-girl-training-with-dumbbells-isolated-blue-background-neon_155003-45614.jpg?w=1380&t=st=1682345586~exp=1682346186~hmac=1b8f350e07f7846ea5b4a230c7b99bb03a461d1c5995a994fc5695ba5328cb47");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.chart{
+    display: flex;
+    justify-content: center;
+    background-color: #00000050;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 30px;
+}
+ /* Navbar styles */
+ .navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 60px;
+    background-color: #7fd4df06;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.navbar a:hover {
+    color: #0077FF;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+.calculator {
+    flex-basis: 30%;
+    background-color: #3485e89b;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.calculator:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.calculator h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+
+
+#bmi-result, #bmr-result {
+    font-size: 24px;
+    color: #4d4d4d;
+    margin-top: 20px;
+}
+
+canvas {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+}
+
+#graph-container {
+    background-image: url("graph-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+#graph-container #graph {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 2.2em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    top:10px;
+    z-index: 1;
+  }
+  
+  button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+  
+  button:hover::before {
+    filter: blur(20px);
+  }
+  
+  button:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  }

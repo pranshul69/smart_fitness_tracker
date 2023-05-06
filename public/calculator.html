@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calorie Calculator</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="calculator.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Calorie Calculator</h1>
+
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="exercise" class="col-sm-2 control-label"
+                        >Exercise:</label
+                    >
+                    <div class="col-sm-10">
+                        <select id="exercise" class="form-control">
+                            <option value="running">Running</option>
+                            <option value="cycling">Cycling</option>
+                            <option value="swimming">Swimming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="duration" class="col-sm-2 control-label"
+                        >Duration (minutes):</label
+                    >
+                    <div class="col-sm-10">
+                        <input
+                            type="number"
+                            id="duration"
+                            name="duration"
+                            min="1"
+                            max="240"
+                            class="form-control"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button
+                            type="button"
+                            class="button1"
+                            onclick="calculateCalories()"
+                        >
+                            Calculate Calories
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="resultB">
+                <p id="result" class="lead text-center"></p>
+            </div>
+        </div>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            function calculateCalories() {
+                // Get the values of the exercise and duration inputs
+                var exercise = document.getElementById("exercise").value;
+                var duration = parseInt(
+                    document.getElementById("duration").value
+                );
+
+                // Calculate the estimated calories burned based on the exercise and duration
+                var caloriesBurned;
+                switch (exercise) {
+                    case "running":
+                        caloriesBurned = 10 * duration;
+                        break;
+                    case "cycling":
+                        caloriesBurned = 8 * duration;
+                        break;
+                    case "swimming":
+                        caloriesBurned = 12 * duration;
+                        break;
+                }
+
+                // Display the result to the user
+                document.getElementById("result").innerHTML =
+                    "Estimated calories burned: " + caloriesBurned + " kcal";
+            }
+        </script>
+    </body>
+</html>
